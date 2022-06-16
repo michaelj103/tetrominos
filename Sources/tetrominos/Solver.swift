@@ -16,17 +16,21 @@ class Solver {
     private let store: PieceStore
     private var placedPieces = [PlacedPiece]()
     private var state = SolverState.Placing
-        
+    
+    private var maxSolutions: Int = Int.max
+    private var allSolutions = [[PlacedPiece]]()
+    
     init(_ dimensions: Size, store: PieceStore) {
         self.board = PieceBoard(dimensions)
         self.store = store
     }
     
-    func run() -> [PlacedPiece] {
+    func run(maxSolutions: Int = Int.max) -> [[PlacedPiece]] {
         board.clear()
         store.clearCheckouts()
         placedPieces = []
         state = .Placing
+        self.maxSolutions = maxSolutions
         
         // basic sanity check first. Does the number of pips in available pieces match
         // the number we need to fill on the board and is that number non-zero
@@ -37,7 +41,7 @@ class Solver {
         }
         
         _runInternal()
-        return placedPieces
+        return allSolutions
     }
     
     private func _runInternal() {
@@ -56,7 +60,14 @@ class Solver {
     private func _placeNextPiece(startingID: Int, startingRotation: Int) {
         guard let nextPoint = board.nextAvailable() else {
             // we've placed all the pieces, so this is a solution
-            state = .Done
+            allSolutions.append(placedPieces)
+            if allSolutions.count >= maxSolutions {
+                // We have the max requested solutions. Stop trying
+                state = .Done
+            } else {
+                // Remove the last placed piece and keep looking for solutions
+                state = .Backtracking
+            }
             return
         }
         
