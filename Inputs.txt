@@ -1,0 +1,45 @@
+Talos Principle Inputs
+
+Cube Unlock:
+???
+
+Laser Unlock:
+???
+
+World A Unlock:
+4x4
+1I1J1L1Z
+
+World B Unlock:
+4x5
+1I2T1L1Z
+
+fan unlock:
+4x5
+2T1L1S1Z
+
+replay unlock:
+4x5
+2T1J1S1Z
+
+World C Unlock:
+4x6
+2T2J1L1Z
+
+World A Star:
+8x5
+4T1L1J2S2Z
+
+World B Star:
+8x5
+2I1O4T2L1J
+
+World C Star:
+8x5
+1L1J1S1Z2T2I2O
+
+
+Tower
+
+Level 1:
+
