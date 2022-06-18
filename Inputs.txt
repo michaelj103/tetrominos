@@ -14,17 +14,21 @@ World B Unlock:
 4x5
 1I2T1L1Z
 
-fan unlock:
+Fan unlock:
 4x5
 2T1L1S1Z
 
-replay unlock:
+Replay unlock:
 4x5
 2T1J1S1Z
 
 World C Unlock:
 4x6
 2T2J1L1Z
+
+Platform Unlock:
+4x6
+1I1O2T1L1Z
 
 World A Star:
 8x5
@@ -42,4 +46,9 @@ World C Star:
 Tower
 
 Level 1:
+4x4
+2L2Z
 
+Level 2:
+6x6
+1O4T4L
