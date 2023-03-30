@@ -5,12 +5,15 @@ let size = getDimensions()
 let store = PieceStore()
 addPieces(store)
 let solver = Solver(size, store: store)
-let maxSolutions = 10
+let maxSolutions = 1
 let solutions = solver.run(maxSolutions: maxSolutions)
 
 if solutions.count > 0 && solutions[0].count > 0 {
-    let solutionDescriptor = solutions.count < maxSolutions ? "" : "at least "
-    print("Found \(solutionDescriptor)\(solutions.count) solution\(solutions.count == 1 ? "" : "s")")
+    if solutions.count > 1 {
+        // only print solution descriptor if we found multiple
+        let solutionDescriptor = solutions.count < maxSolutions ? "" : "at least "
+        print("Found \(solutionDescriptor)\(solutions.count) solution\(solutions.count == 1 ? "" : "s")")
+    }
     let firstSolution = solutions[0]
     let solutionString = PiecePrinter.GenerateString(size, placements: firstSolution, store: store)
     print(solutionString)
