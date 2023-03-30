@@ -8,7 +8,7 @@ The goal of the puzzles is to file a rectangulare grid with a set of provided "t
 
 To build-and-run, simply invoke `swift run tetrominos`
 
-In the current version, the tool is interactive only and will ask for "Dimensions" and "Pieces". Dimensions takes the form of a string `AxB` where `A` and `B` are integers. Pieces should be a string of counts and piece names. The possible names are the letters I, J, L, O, S, Z that resemble the 6 standard Tetris pieces. For example
+In the current version, the tool is interactive only and will ask for "Dimensions" and "Pieces". Dimensions takes the form of a string `AxB` where `A` and `B` are integers. Pieces should be a string of counts and piece names. The possible names are the letters I, J, L, O, S, Z, and T that resemble the 7 standard Tetris pieces. For example
 
 ```
 $ swift run tetrominos                                              
