@@ -38,7 +38,7 @@ World B Star:
 8x5
 2I1O4T2L1J
 
-World C Star:
+World C Star: (740 solutions)
 8x5
 1L1J1S1Z2T2I2O
 
@@ -52,3 +52,88 @@ Level 1:
 Level 2:
 6x6
 1O4T4L
+
+Level 3:
+8x5
+4I2L2J1S1Z
+
+Level 4: (1712 solutions)
+6x8
+2O4T1J1L2S2Z
+
+Level 5: (50250 solutions)
+8x7
+2I4O4T1J1L1S1Z
+
+Level 6: (1 solution)
+6x6
+1O4S4L
+
+
+Axe world A:
+
+Dome 1:
+4x10
+1S4T2O1I2L
+
+Dome 2:
+5x8
+2Z1S2T2I2L1O
+
+Dome 3:
+6x6
+2O2T2L1J1I1S
+
+Dome 4:
+6x6
+3Z2L2J2T
+
+Tomb:
+4x5
+1I2O2J
+
+
+Axe World B
+
+Dome 1: (10 solutions)
+4x5
+2T1Z1L1I
+
+Dome 2: (18730 solutions)
+8x6
+2T2O1I2L3J2S
+
+Dome 3: (30 solutions)
+7x4
+2I2T1Z1S1L
+
+Dome 4: (246 solutions)
+4x10
+4T2Z1S2I1J
+
+Tomb: (1736 solutions)
+8x6
+1I2T2O1S3Z3J
+
+
+Axe World C
+
+Dome 1: (4 solutions)
+4x5
+1L1Z1S2T
+
+Dome 2: (4 solutions)
+4x5
+2L1J2T
+
+Dome 3: (24 solutions)
+7x4
+1L1J2Z2T1I
+
+Dome 4: (19638 solutions)
+8x6
+2T1I2L3J2O2Z
+
+Tomb: (268 solutions)
+6x6
+1I2O2Z2L2J
