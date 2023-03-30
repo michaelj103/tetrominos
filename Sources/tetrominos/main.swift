@@ -1,4 +1,5 @@
 import Darwin
+import TetrominoCore
 
 let size = getDimensions()
 let store = PieceStore()

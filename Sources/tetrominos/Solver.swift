@@ -5,6 +5,8 @@
 //  Created by Michael Brandt on 6/15/22.
 //
 
+import TetrominoCore
+
 fileprivate enum SolverState {
     case Placing
     case Backtracking
